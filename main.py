@@ -96,15 +96,15 @@ def signin():
 
 
 def database():
-    client = MongoClient("mongodb+srv://amineEEE:amineEEE2000@clustertp.jubir.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-    db=client.get_database('ChatBotDB')
+    client = MongoClient("mongo_url")
+    db=client.get_database('db')
     return db
 
 
 
 def configureDataBase():
-    client = MongoClient("mongodb+srv://amineEEE:amineEEE2000@clustertp.jubir.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-    return client.get_database('ChatBotDB')
+    client = MongoClient("mongo_url")
+    return client.get_database('yourDb')
 
 
 
